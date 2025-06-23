@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cryptective | Secure Digital Asset Recovery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00ffe0;
+      --background: #0d0d0d;
+      --card: #1b1b1b;
+      --text: #f1f1f1;
+      --accent: #00bfa6;
+      --hover: #00ffe066;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px 50px;
+      background: #121212;
+      border-bottom: 1px solid #222;
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      width: 50px;
+      margin-right: 12px;
+    }
+
+    .brand-name {
+      font-size: 1.8em;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 30px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+
+    .hero h1 {
+      font-size: 2.8em;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 30px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 255, 224, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px var(--hover);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #111;
+      font-size: 0.9em;
+      color: #999;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin: 15px 0 0;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="logo.PNG" alt="Cryptective Logo" />
+    <div class="brand-name">Cryptective</div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="recovery.html">Recovery</a>
+    <a href="newsletter.html">Newsletter</a>
+    <a href="signup.html">Join Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Secure Your Crypto Future</h1>
+  <p>Cryptective is a Florida-based digital asset recovery firm. We retrieve lost funds, analyze blockchain forensics, and provide secure investment opportunities.</p>
+</section>
+
+<section class="services">
+  <div class="card">
+    <h3>Asset Recovery</h3>
+    <p>Lost access to your wallet or funds? We recover assets from wallets, exchanges, and blockchain breaches.</p>
+  </div>
+  <div class="card">
+    <h3>Investment Opportunities</h3>
+    <p>Carefully selected crypto investment pools with capital protection and performance insights.</p>
+  </div>
+  <div class="card">
+    <h3>Blockchain Forensics</h3>
+    <p>We trace fraudulent transactions and generate verified reports for legal or personal recovery processes.</p>
+  </div>
+  <div class="card">
+    <h3>Private Consultation</h3>
+    <p>Confidential sessions to assess, protect, and grow your digital portfolio safely.</p>
+  </div>
+</section>
+
+<footer>
+  Contact: <a href="mailto:support@cryptective.xyz" style="color: #00ffe0;">support@cryptective.xyz</a> |
+  Phone: +1 (305) 239-4673<br/>
+  &copy; 2025 Cryptective Technologies. All rights reserved.
+</footer>
+
+</body>
+</html>
