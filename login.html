@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login – Cryptective</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d0d0d;
+      color: #e0e0e0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #000;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      color: #00bfff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .logo-title img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav a {
+      color: #00bfff;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: 80px auto;
+      padding: 30px;
+      background: #1a1a1a;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    h2 {
+      text-align: center;
+      color: #00bfff;
+      margin-bottom: 30px;
+    }
+    input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border: 1px solid #333;
+      border-radius: 6px;
+      background: #0f0f0f;
+      color: #fff;
+      font-size: 1rem;
+    }
+    input::placeholder {
+      color: #aaa;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #00bfff;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #000;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #0099cc;
+    }
+    .forgot-link {
+      display: block;
+      text-align: right;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #999;
+      text-decoration: none;
+    }
+    .forgot-link:hover {
+      color: #00bfff;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background: #0a0a0a;
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-title">
+      <img src="logo.PNG" alt="Cryptective Logo" />
+      Cryptective
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <div class="login-container">
+    <h2>Sign In</h2>
+    <form action="#" method="POST">
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Log In</button>
+      <a href="#" class="forgot-link">Forgot Password?</a>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Cryptective. All rights reserved.</p>
+    <p>Email: support@cryptective.xyz | Phone: +1 (305) 239-4673</p>
+  </footer>
+
+</body>
+</html>
