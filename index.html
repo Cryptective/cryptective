@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cryptective Technologies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding-top: 60px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .logo img {
+      width: 160px;
+      height: auto;
+      animation: zoomIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 20px 0 10px;
+      color: #00ffff;
+    }
+
+    .typed {
+      color: #ffffff;
+      font-size: 1.2em;
+      height: 30px;
+    }
+
+    .about {
+      max-width: 600px;
+      margin: 50px auto;
+      line-height: 1.6;
+      padding: 0 20px;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    .contact {
+      margin: 60px 0 20px;
+      font-size: 0.95em;
+      opacity: 0.8;
+    }
+
+    .contact a {
+      color: #00ffff;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8em;
+      color: #666;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAEAAElEQVR4nGRd14IkR44DmXP//8Od5D..." alt="Cryptective Logo">
+  </div>
+  <h1>Cryptective</h1>
+  <div class="typed" id="typed-text"></div>
+</header>
+
+<section class="about">
+  <p>
+    At Cryptective, we specialize in digital asset recovery and blockchain investigation.
+    Whether you've lost access, been misled, or need secure intelligence services — our
+    advanced tech-driven solutions are tailored to recover and protect what's yours.
+  </p>
+</section>
+
+<section class="contact">
+  <h3>Contact Us</h3>
+  <a href="mailto:contact@cryptective.xyz">📧 contact@cryptective.xyz</a>
+  <a href="tel:+13052394673">📞 +1 (305) 239-4673</a>
+</section>
+
+<footer>
+  &copy; 2025 Cryptective Technologies Ltd. All rights reserved.
+</footer>
+
+<!-- Typed Text Script -->
+<script>
+  const text = ["Blockchain Recovery Experts", "Asset Tracing. Fraud Response.", "Digital Security with Integrity"];
+  let i = 0, j = 0, currentText = '', isDeleting = false;
+  const speed = 100, element = document.getElementById("typed-text");
+
+  function type() {
+    if (i < text.length) {
+      if (!isDeleting && j <= text[i].length) {
+        currentText = text[i].substring(0, j++);
+      } else if (isDeleting && j > 0) {
+        currentText = text[i].substring(0, j--);
+      }
+
+      element.textContent = currentText;
+
+      if (j === text[i].length) {
+        isDeleting = true;
+        setTimeout(type, 1200);
+      } else if (j === 0) {
+        isDeleting = false;
+        i = (i + 1) % text.length;
+        setTimeout(type, 300);
+      } else {
+        setTimeout(type, isDeleting ? speed / 2 : speed);
+      }
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", type);
+</script>
+
+</body>
+</html>
