@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Link Wallet – Cryptective</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d0d0d;
+      color: #e0e0e0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #000;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      color: #00bfff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .logo-title img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav a {
+      color: #00bfff;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    section {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #00bfff;
+      margin-bottom: 40px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea, select {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 6px;
+      padding: 12px;
+      margin-bottom: 20px;
+      color: #fff;
+      font-size: 1rem;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #aaa;
+    }
+    button {
+      background: #00bfff;
+      color: #000;
+      border: none;
+      padding: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #0099cc;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background: #0a0a0a;
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-title">
+      <img src="logo.PNG" alt="Cryptective Logo" />
+      Cryptective
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Link Affected Wallet</h1>
+    <p class="note">
+      🔐 Please do not enter your recovery phrase or private key. We only require wallet type, public address, and a short incident report.
+    </p>
+    <form action="https://getform.io/f/axoylexb" method="POST">
+      <select name="walletPlatform" required>
+        <option value="">Select Wallet Platform</option>
+        <option value="Trust Wallet">Trust Wallet</option>
+        <option value="MetaMask">MetaMask</option>
+        <option value="Coinbase Wallet">Coinbase Wallet</option>
+        <option value="Ledger/Trezor">Ledger / Trezor</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <input type="text" name="walletAddress" placeholder="Public Wallet Address" required />
+      
+      <select name="walletType" required>
+        <option value="">Wallet Type</option>
+        <option value="Browser Extension">Browser Extension</option>
+        <option value="Mobile App">Mobile App</option>
+        <option value="Hardware Wallet">Hardware Wallet</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <textarea name="incident" rows="6" placeholder="Briefly describe what happened..." required></textarea>
+
+      <button type="submit">Submit Wallet Report</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cryptective. All rights reserved.</p>
+    <p>Email: support@cryptective.xyz | Phone: +1 (305) 239-4673</p>
+  </footer>
+
+</body>
+</html>
