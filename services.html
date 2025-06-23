@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services – Cryptective</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d0d0d;
+      color: #e0e0e0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #000;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      color: #00bfff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .logo-title img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav a {
+      color: #00bfff;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    h1, h2 {
+      color: #00bfff;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #121212;
+      border: 1px solid #1a1a1a;
+      border-radius: 8px;
+      padding: 25px;
+      text-align: center;
+      transition: 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 4px 20px rgba(0, 191, 255, 0.2);
+      background-color: #111820;
+    }
+
+    .card i {
+      font-size: 36px;
+      color: #00bfff;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #bbbbbb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background: #0a0a0a;
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 60px;
+    }
+  </style>
+  <!-- Load Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-title">
+      <img src="logo.PNG" alt="Cryptective Logo">
+      Cryptective
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Our Services</h1>
+
+    <h2>🔐 Asset Recovery</h2>
+    <div class="grid">
+      <div class="card">
+        <i class="fas fa-unlock-alt"></i>
+        <h3>Wallet Recovery</h3>
+        <p>Recover access to lost or locked crypto wallets with secure forensic methods and private key support.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-search-dollar"></i>
+        <h3>Scam & Fraud Investigation</h3>
+        <p>We trace stolen assets across blockchains, helping you build a case and potentially recover funds.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-link"></i>
+        <h3>Transaction Tracing</h3>
+        <p>Advanced tracking of crypto movements using blockchain analytics and on-chain intelligence tools.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 60px;">📈 Investment Opportunities</h2>
+    <div class="grid">
+      <div class="card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Smart Growth Plans</h3>
+        <p>Enter curated crypto portfolios designed to grow steadily with managed risk and transparent tracking.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-user-shield"></i>
+        <h3>Capital Protection</h3>
+        <p>All investment models feature optional capital protection layers to limit downside exposure.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-sync-alt"></i>
+        <h3>Flexible Withdrawals</h3>
+        <p>Weekly or monthly withdrawal options available. No hidden fees or lock-in periods.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cryptective. All rights reserved.</p>
+    <p>Email: support@cryptective.xyz | Phone: +1 (305) 239-4673</p>
+  </footer>
+
+</body>
+</html>
