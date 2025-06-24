@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wallet Linking - Cryptective</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <div style="display: flex; align-items: center;">
+        <img src="logo.png" alt="Cryptective Logo" class="logo" />
+        <span class="brand-name">Cryptective</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="wallet-linking.html" class="active">Wallet Linking</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Secure Wallet Linking</h2>
+      <p>Safely link wallets involved in suspicious activity or loss. Our team will begin analysis right away.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="container">
+      <form action="https://getform.io/f/your-form-endpoint" method="POST" class="wallet-form">
+        <h3>Link a New Wallet</h3>
+        <input type="text" name="walletName" placeholder="Wallet Name (e.g. MetaMask)" required />
+        <input type="text" name="blockchain" placeholder="Blockchain Network (e.g. Ethereum)" required />
+        <input type="text" name="walletAddress" placeholder="Wallet Address" required />
+        <textarea name="description" placeholder="Brief description of issue or purpose (optional)" rows="4"></textarea>
+        <button type="submit" class="btn-primary">Link Wallet</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="wallet-preview">
+    <div class="container">
+      <h3>Linked Wallets</h3>
+      <div class="wallet-grid">
+        <div class="wallet-card">
+          <h4>Wallet: Trust Wallet</h4>
+          <p><strong>Network:</strong> Binance Smart Chain</p>
+          <p><strong>Address:</strong> 0xabc...123</p>
+          <p><strong>Status:</strong> Pending Review</p>
+          <p><strong>Date:</strong> Jun 21, 2025</p>
+        </div>
+        <div class="wallet-card">
+          <h4>Wallet: MetaMask</h4>
+          <p><strong>Network:</strong> Ethereum</p>
+          <p><strong>Address:</strong> 0xdef...456</p>
+          <p><strong>Status:</strong> Verified</p>
+          <p><strong>Date:</strong> Jun 18, 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h3>Need help investigating a wallet?</h3>
+      <p>Our forensic team is here to assist you in tracing lost or compromised funds.</p>
+      <a href="contact.html" class="btn-primary">Contact Cryptective</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Cryptective Logo" />
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="services.html">Services</a> |
+        <a href="wallet-linking.html">Wallet</a> |
+        <a href="signup.html">Signup</a> |
+        <a href="login.html">Login</a> |
+        <a href="newsletter.html">Newsletter</a> |
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-meta">
+        <p>&copy; 2025 Cryptective. All rights reserved.</p>
+        <p>Secure Blockchain Solutions | Trusted Asset Recovery | Smart Crypto Investment</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
